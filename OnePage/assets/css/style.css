@@ -13,6 +13,7 @@
 
 :root {
     --green: #1f5f4c;
+    --lightGreen: #0f513236;
     --yellow: #b38937;
 }
 
@@ -675,7 +676,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-    color: #c9e3f5;
+    color: var(--green);
     font-size: 26px;
 }
 
@@ -696,7 +697,7 @@ section {
     font-style: italic;
     margin: 0 15px 15px 15px;
     padding: 20px;
-    background: #f3f9fd;
+    background: var(--lightGreen);
     position: relative;
     margin-bottom: 35px;
     border-radius: 6px;
@@ -706,7 +707,7 @@ section {
     content: "";
     width: 0;
     height: 0;
-    border-top: 20px solid #f3f9fd;
+    border-top: 20px solid var(--lightGreen);
     border-right: 20px solid transparent;
     border-left: 20px solid transparent;
     position: absolute;
@@ -951,6 +952,14 @@ section {
 }
 
 .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--yellow);
+    font-weight: 600;
+}
+
+.contact .info a {
     padding: 0 0 0 60px;
     margin-bottom: 0;
     font-size: 14px;
