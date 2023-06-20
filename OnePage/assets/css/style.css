@@ -53,27 +53,52 @@ h6 {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #2487ce;
+    background: linear-gradient(to right, var(--green), #3e9bdd);
+    /* Add a gradient */
     width: 40px;
     height: 40px;
-    border-radius: 4px;
+    border-radius: 50%;
     transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1);
 }
 
 .back-to-top i {
     font-size: 28px;
     color: #fff;
-    line-height: 0;
 }
 
 .back-to-top:hover {
-    background: #3e9bdd;
-    color: #fff;
+    transform: scale(1.1);
+    /* Add a scale effect on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Add a subtle shadow on hover */
+}
+
+.back-to-top:hover i {
+    color: #000;
+    /* Change the color of the icon on hover */
 }
 
 .back-to-top.active {
     visibility: visible;
     opacity: 1;
+    animation: pulse 2s infinite;
+    /* Add a pulse animation when the button becomes active */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 
