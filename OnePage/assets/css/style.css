@@ -663,12 +663,6 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 
-@media (max-width: 768px) {
-    .testimonials {
-        max-width: 40%;
-    }
-}
-
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
     overflow: hidden;
