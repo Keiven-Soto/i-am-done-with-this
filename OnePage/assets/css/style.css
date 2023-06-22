@@ -846,6 +846,34 @@ section {
     opacity: 1;
 }
 
+@media (min-width: 992px) and (max-width: 1400px) {
+    .team .member .member-img {
+        height: 220px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .team .member .member-img {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        /* make the width 100% of the parent element */
+        padding-bottom: 75%;
+        /* 75% padding for a 4:3 aspect ratio, adjust as needed */
+    }
+}
+
+@media (max-width: 767px) {
+    .team .member .member-img {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        /* make the width 100% of the parent element */
+        height: auto;
+        /* height will automatically adjust according to aspect ratio of the image */
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions
