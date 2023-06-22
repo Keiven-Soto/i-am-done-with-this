@@ -53,8 +53,6 @@ h6 {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: linear-gradient(to right, var(--green), #3e9bdd);
-    /* Add a gradient */
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -66,27 +64,25 @@ h6 {
 }
 
 .back-to-top i {
-    font-size: 28px;
-    color: #fff;
+    font-size: 35px;
+    color: white;
 }
 
 .back-to-top:hover {
     transform: scale(1.1);
-    /* Add a scale effect on hover */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* Add a subtle shadow on hover */
 }
 
 .back-to-top:hover i {
-    color: #000;
-    /* Change the color of the icon on hover */
+    color: #f6e58d;
+    /* changed to light yellow */
 }
 
 .back-to-top.active {
     visibility: visible;
     opacity: 1;
     animation: pulse 2s infinite;
-    /* Add a pulse animation when the button becomes active */
+    background: var(--green);
 }
 
 @keyframes pulse {
